@@ -51,3 +51,29 @@ body{
 .link:hover{
     border: 5px solid #ce18b0;
 }
+
+.clock{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    background: #0B0215;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.clock span{
+    font: 400 48px 'Audiowide';
+    color: #fff;
+    width: 60px;
+    display: grid;
+    place-items: center;
+}
+
+.separation{
+    opacity: 0.4;
+}
