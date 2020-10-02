@@ -1,4 +1,9 @@
-setInterval(function(){
+(() => {
+    getTime();
+    setInterval(getTime,1000)
+})()
+
+function getTime(){
     let week = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
 
 
@@ -18,7 +23,7 @@ setInterval(function(){
     document.getElementById('hours').innerHTML = hora;
     document.getElementById('minutes').innerHTML = minuto;
     document.getElementById('seconds').innerHTML = segundo;
-},1000)
+}
 
 function zero(x) {
     if (x < 10) {
