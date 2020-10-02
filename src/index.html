@@ -6,6 +6,7 @@
     <title>Nova guia</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,11 +21,61 @@
         <span id="seconds">00</span>
     </section>
 
-    <div class="content">
-        <div id="cards">       
-            <!-- Cards go here! -->
+    <main class="main">
+        <div class="links-tab tab">
+            <input type="radio" name="tabs" class="rb" id="tab_1" checked>
+
+            <label for="tab_1" class="label-tg">
+                <img src="./assets/links.svg" alt="Links" class="tab-icon">
+                <span>Links</span>
+            </label>
+
+            <div class="content">
+                <div id="cards">       
+                    <!-- Cards go here! -->
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="kanban-tab tab">
+            <input type="radio" name="tabs" class="rb" id="tab_2">
+
+            <label for="tab_2" class="label-tg">
+                <img src="./assets/ul-list.svg" alt="KanBan" class="tab-icon">
+                <span>KanBan</span>
+            </label>
+
+            <div class="content">
+                KanBan
+            </div>
+        </div>
+
+        <div class="news-tab tab">
+            <input type="radio" name="tabs" class="rb" id="tab_3">
+
+            <label for="tab_3" class="label-tg">
+                <img src="./assets/news.svg" alt="News" class="tab-icon">
+                <span>News</span>
+            </label>
+
+            <div class="content">
+                News
+            </div>
+        </div>
+
+        <div class="settings-tab tab">
+            <input type="radio" name="tabs" class="rb" id="tab_4">
+
+            <label for="tab_4" class="label-tg">
+                <img src="./assets/settings.svg" alt="Settings" class="tab-icon">
+                <span>Settings</span>
+            </label>
+
+            <div class="content">
+                Settings
+            </div>
+        </div>
+    </main>
 
     <input type="text" id="name">
     <input type="text" id="url">

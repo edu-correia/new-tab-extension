@@ -2,10 +2,12 @@ body{
     background: #1E1528;
 }
 
-.content{
+.main{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    position: relative;
 }
 
 #cards{
@@ -76,4 +78,53 @@ body{
 
 .separation{
     opacity: 0.4;
+}
+
+.rb{
+    display: none;
+}
+
+.rb:checked ~ .content{
+    display: block;
+}
+
+.rb:checked ~ .label-tg{
+    opacity: 1;
+}
+
+.label-tg{
+    width: 200px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0.5;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    background: #1BCE18;
+    box-sizing: border-box;
+    font: 700 20px 'Ubuntu';
+}
+
+.content{
+    width: 100%;
+    height: max-content;
+    background: transparent;
+    border-radius: 16px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: none;
+    border: 1px solid black;
+}
+
+.tab-icon{
+    height: 20px;
+    width: auto;
 }
