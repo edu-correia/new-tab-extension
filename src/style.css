@@ -121,7 +121,6 @@ body{
     margin-top: 100px;
     margin-bottom: 50px;
     display: none;
-    border: 1px solid black;
 }
 
 .tab-icon{
@@ -134,6 +133,7 @@ body{
     width: 100%;
     height: max-content;
     border-radius: 8px;
+    margin-bottom: 30px;
 }
 
 .post section{
@@ -169,4 +169,5 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-left: 20px;
 }
