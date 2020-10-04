@@ -186,3 +186,47 @@ body{
 ::-webkit-scrollbar-thumb {
     background: #0B0215;
 }
+
+.boards{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.board{
+    width: 100%;
+    height: max-content;
+    background: #0B0215;
+    border-radius: 8px;
+}
+
+.board header{
+    color: #fff;
+    display: flex;
+    justify-content:  space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.bloco p{
+    width: 100%;
+    height: 40px;
+    background:#fff;
+    border-radius: 4px;
+    border-bottom: 3px solid red;
+}
+
+.is-dragging{
+    cursor: grab;
+    opacity: 0.3;
+}
+
+.dropzone{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: 30px;
+}

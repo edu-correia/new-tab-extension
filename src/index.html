@@ -38,7 +38,7 @@
         </div>
 
         <div class="kanban-tab tab">
-            <input type="radio" name="tabs" class="rb" id="tab_2">
+            <input type="radio" name="tabs" class="rb" id="tab_2" checked>
 
             <label for="tab_2" class="label-tg">
                 <img src="./assets/ul-list.svg" alt="KanBan" class="tab-icon">
@@ -46,7 +46,40 @@
             </label>
 
             <div class="content">
-                KanBan
+                <div class="boards">
+                    <div class="board">
+                        <header>
+                            <h2>To do</h2>
+                        </header>
+                        <div class="dropzone">
+                            <div class="bloco" draggable="true">
+                                <p>Fazer xixi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="board">
+                        <header>
+                            <h2>Doing</h2>
+                        </header>
+                        <div class="dropzone">
+                            <div class="bloco" draggable="true">
+                                <p>Fazer xixi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="board">
+                        <header>
+                            <h2>Done</h2>
+                        </header>
+                        <div class="dropzone">
+                            <div class="bloco" draggable="true">
+                                <p>Fazer xixi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -87,5 +120,6 @@
     <script src="javascript/card.js"></script>
     <script src="javascript/clock.js"></script>
     <script src="javascript/news.js"></script>
+    <script src="javascript/kanban.js"></script>
 </body>
 </html>
