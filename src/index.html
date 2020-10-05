@@ -38,7 +38,7 @@
         </div>
 
         <div class="kanban-tab tab">
-            <input type="radio" name="tabs" class="rb" id="tab_2" checked>
+            <input type="radio" name="tabs" class="rb" id="tab_2">
 
             <label for="tab_2" class="label-tg">
                 <img src="./assets/ul-list.svg" alt="KanBan" class="tab-icon">
@@ -46,6 +46,12 @@
             </label>
 
             <div class="content">
+                <div class="add-board">
+                    <input type="text" id="textBoard" placeholder="Adicione uma tarefa...">
+                    <input type="button" id="btn-board" value="Adicionar">
+                    <input type="button" id="dlt-boards" value="Excluir prontos">
+                </div>
+
                 <div class="boards">
                     <div class="board">
                         <header>
@@ -113,23 +119,34 @@
             </label>
 
             <div class="content">
-                Settings
+                <fieldset class="add-link">
+                    <legend>Adicionar Link</legend>
+
+                    <div class="input-group">
+                        <label for="name">Nome do site:</label>
+                        <input type="text" id="name">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="url">Link do site:</label>
+                        <input type="text" id="url">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="image">Link da imagem do site:</label>
+                        <input type="text" id="image">
+                    </div>
+                    
+                    <div class="add-footer">
+                        <div></div>
+                        <input type="button" id="btn" value="Adicionar Link">
+                    </div>
+    
+                </fieldset>
             </div>
         </div>
     </main>
 
-    <input type="text" id="name">
-    <input type="text" id="url">
-    <input type="text" id="image">
-
-    <input type="button" id="btn" value="Add Card">
-
-
-    <input type="text" id="textBoard">
-
-    <input type="button" id="btn-board" value="Add Board">
-
-    <input type="button" id="dlt-boards" value="Delete  Boards">
     <script src="javascript/card.js"></script>
     <script src="javascript/clock.js"></script>
     <script src="javascript/news.js"></script>

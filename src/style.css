@@ -18,11 +18,11 @@ body{
 
 .link{
     width: 100%;
-    max-width: calc(70vw / 7);
-    height: 180px;
+    max-width: 130px;
+    height: 150px;
     border: 5px solid #1BCE18;
     border-radius: 16px;
-    padding: 20px;
+    padding: 10px 5px 20px 5px;
     box-sizing: border-box;
     color: #fff;
     text-decoration: none;
@@ -32,6 +32,7 @@ body{
     align-items: center;
     transition-property: border;
     transition-duration: .3s;
+    position: relative;
 }
 
 .link img{
@@ -118,7 +119,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 50px;
     display: none;
 }
@@ -223,14 +224,15 @@ body{
     padding-top: 4px;
     padding-bottom: 4px;
     box-sizing: border-box;
-    font-size: 24px;
+    font-size: 20px;
     max-width: 100%;
+    padding-right: 20px;
 }
 
-.bloco button{
+.bloco button, .link button{
     position: absolute;
-    top: 3px;
-    right: 3px;
+    top: 4px;
+    right: 4px;
     border: none;
     background: red;
     color: #fff;
@@ -265,4 +267,92 @@ body{
     margin-left: 5%;
     margin-right: 5%;
     min-height: 30px;
+}
+
+fieldset{
+    border: 3px solid #1BCE18;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+fieldset legend{
+    color: #1BCE18;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-group label{
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-group input{
+    margin-top: 3px;
+    outline: none;
+    background: #0B0215;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.add-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-footer input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    background: #1BCE18;
+    border-radius: 8px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+.add-board{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-board #textBoard{
+    flex: 1;
+    outline: none;
+    background: #0B0215;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.add-board input[type=button]{
+    border-radius: 8px;
+    width: 120px;
+    background: rgba(179, 6, 6, 0.911);
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#btn-board{
+    background: #1BCE18;
 }
