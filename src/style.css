@@ -210,23 +210,48 @@ body{
     border-bottom: 1px solid #fff;
 }
 
+.bloco{
+    position: relative;
+}
+
 .bloco p{
     width: 100%;
-    height: 50px;
+    height: max-content;
     background:#fff;
     border-radius: 4px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-sizing: border-box;
+    font-size: 24px;
+    max-width: 100%;
+}
+
+.bloco button{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border: none;
+    background: red;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold; 
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    padding-bottom: 2px;
 }
 
 .todo div p{
-    border-bottom: 5px solid red;
+    border-bottom: 4px solid rgb(167, 2, 2);
 }
 
 .doing div p{
-    border-bottom: 5px solid yellow;
+    border-bottom: 4px solid rgb(247, 247, 49);
 }
 
 .done div p{
-    border-bottom: 5px solid green;
+    border-bottom: 4px solid green;
 }
 
 .is-dragging{

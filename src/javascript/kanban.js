@@ -43,14 +43,20 @@ function loadKanBan(arr, div){
             let boardDiv = document.createElement('div');
             let pEl = document.createElement('p');
             let pText = document.createTextNode(item);
+            let dltButton = document.createElement('button');
+            let dltText = document.createTextNode('x');
+
     
             boardDiv.setAttribute('class', 'bloco');
             boardDiv.setAttribute('draggable', true);
-    
+            
+            dltButton.appendChild(dltText);
             pEl.appendChild(pText);
             boardDiv.appendChild(pEl);
-    
+            boardDiv.appendChild(dltButton);
+            
             div.appendChild(boardDiv);
+            dltButton.addEventListener('click', deleteSpecific);
         }
     })
 }
@@ -138,21 +144,27 @@ btnBoard.onclick = () => {
     let aux = [savedTodos, boardTitle];
 
     localStorage.setItem('todo', aux);
-
+    
     let abcDiv = document.getElementById('todo');
+
     let boardDiv = document.createElement('div');
     let pEl = document.createElement('p');
     let pText = document.createTextNode(boardTitle);
+    let dltButton = document.createElement('button');
+    let dltText = document.createTextNode('x');
 
     boardDiv.setAttribute('class', 'bloco');
     boardDiv.setAttribute('draggable', true);
 
+    dltButton.appendChild(dltText);
     pEl.appendChild(pText);
     boardDiv.appendChild(pEl);
+    boardDiv.appendChild(dltButton);
     
     abcDiv.appendChild(boardDiv);
-    boardDiv.addEventListener('dragstart', dragstart)
-    boardDiv.addEventListener('dragend', dragend)
+    boardDiv.addEventListener('dragstart', dragstart);
+    boardDiv.addEventListener('dragend', dragend);
+    dltButton.addEventListener('click', deleteSpecific);
 }
 
 //Delete Boards
@@ -162,5 +174,13 @@ let dltBoards = document.getElementById('dlt-boards');
 dltBoards.onclick = () => {
     let doneBoard = document.getElementById('done');
     doneBoard.innerHTML = '';
+    save();
+}
+
+function deleteSpecific(){
+    let dropzoneDiv = this.parentNode.parentNode;
+    let itemToDelete = this.parentNode;
+
+    dropzoneDiv.removeChild(itemToDelete);    
     save();
 }
