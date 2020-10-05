@@ -154,3 +154,13 @@ btnBoard.onclick = () => {
     boardDiv.addEventListener('dragstart', dragstart)
     boardDiv.addEventListener('dragend', dragend)
 }
+
+//Delete Boards
+
+let dltBoards = document.getElementById('dlt-boards');
+
+dltBoards.onclick = () => {
+    let doneBoard = document.getElementById('done');
+    doneBoard.innerHTML = '';
+    save();
+}
