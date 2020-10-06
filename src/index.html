@@ -59,10 +59,7 @@
                             <h2>To do</h2>
                         </header>
                         <div class="dropzone todo" id="todo">
-                            <!-- Todo Boards 
-                            <div class="bloco" draggable="true">
-                                <p>todo</p> 
-                            </div> -->
+                            <!-- Todo Boards -->
                         </div>
                     </div>
 
@@ -72,10 +69,7 @@
                             <h2>Doing</h2>
                         </header>
                         <div class="dropzone doing" id="doing">
-                            <!-- Doing Boards 
-                            <div class="bloco" draggable="true">
-                                <p>doing</p> 
-                            </div> -->
+                            <!-- Doing Boards -->
                         </div>
                     </div>
 
@@ -85,10 +79,7 @@
                             <h2>Done</h2>
                         </header>
                         <div class="dropzone done" id="done">
-                            <!-- Done Boards  
-                            <div class="bloco" draggable="true">
-                                <p>doing</p> 
-                            </div> -->
+                            <!-- Done Boards -->
                         </div>
                     </div>
                 </div>
@@ -140,6 +131,53 @@
                     <div class="add-footer">
                         <div></div>
                         <input type="button" id="btn" value="Adicionar Link">
+                    </div>
+    
+                </fieldset>
+
+                <fieldset class="add-link">
+                    <legend>Editar configurações</legend>
+
+                    <div class="input-group">
+                        <label for="topic">Tema das notícias:</label>
+                        <input type="text" id="topic">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="blank">Manter guia ao abrir link:</label>
+                        <select name="blank-tab" id="blank">
+                            <option value="0">Não</option>
+                            <option value="1">Sim</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tab-theme">Tema da página:</label>
+                        <select name="tab-theme" id="tab-theme">
+                            <option value="0">Omni</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="language">Língua dos dias da semana:</label>
+                        <select name="language" id="language">
+                            <option value="0">Português - BR</option>
+                            <option value="1">English - US</option>
+                            <option value="1">Español - ES</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="timestamp">Formato das horas:</label>
+                        <select name="timestamp" id="timestamp">
+                            <option value="0">12:00</option>
+                            <option value="1">24:00</option>
+                        </select>
+                    </div>
+                    
+                    <div class="add-footer">
+                        <div></div>
+                        <input type="button" id="edit" value="Salvar">
                     </div>
     
                 </fieldset>
