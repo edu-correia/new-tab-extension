@@ -16,15 +16,10 @@ Extensão do Google Chrome que contém 4 funcionalidades primárias:
 #### Painel de notícias do dia advindas do New York Times
 
 ## :camera: Fotos:
-<div>
-  <img width="49%" src="https://geekpublicitario.com.br/wp-content/uploads/2017/08/novo-logo-youtube.jpg">
-  <img width="49%" src="https://geekpublicitario.com.br/wp-content/uploads/2017/08/novo-logo-youtube.jpg">
-</div>
-
-<div>
-  <img width="49%" src="https://geekpublicitario.com.br/wp-content/uploads/2017/08/novo-logo-youtube.jpg">
-  <img width="49%" src="https://geekpublicitario.com.br/wp-content/uploads/2017/08/novo-logo-youtube.jpg">
-</div>
+  <img width="50%" src="https://github.com/eduardo-ehsc/new-tab-extension/blob/master/readme-images/kanban.png">
+  <img width="50%" src="https://github.com/eduardo-ehsc/new-tab-extension/blob/master/readme-images/favoritos.png">
+  <img width="50%" src="https://github.com/eduardo-ehsc/new-tab-extension/blob/master/readme-images/relogio.png">
+  <img width="50%" src="https://github.com/eduardo-ehsc/new-tab-extension/blob/master/readme-images/noticias.png">
 
 ## :bust_in_silhouette: Contribuidores:
 
