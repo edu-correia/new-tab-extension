@@ -1,5 +1,14 @@
 <h1 align="center">New Tab Extension</h1>
 
+## :computer: Como usar:
+
+* Baixe esse repositório;
+* Acesse o [menu de extensões do Chrome](chrome://extensions/);
+* Ative o modo de desenvolvedor no canto superior direito;
+* Clique no botão "Carregar sem compactação" no canto superior esquerdo;
+* Navegue até a pasta na qual você clonou esse repositório e a selecione;
+* Pronto! Extensão pronta para uso.
+
 ## :memo: Descrição:
 Extensão do Google Chrome que contém 4 funcionalidades primárias:
 
