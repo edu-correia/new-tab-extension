@@ -3,10 +3,10 @@ var editor = CodeMirror.fromTextArea(document.getElementById("editor"),{
     theme: "dracula"
 })
 
-const clearBtn = document.getElementById("clearFunction");
+var clearBtn = document.getElementById("clearFunction");
 var runBtn = document.getElementById("runFunction");
 
-//clearBtn.addEventListener("click", cleanConsole());
+clearBtn.addEventListener("click", cleanConsole());
 runBtn.addEventListener("click", run);
 
 function run() {
@@ -56,8 +56,8 @@ function run() {
 
     document.getElementById("show").innerHTML = console.everything[console.everything.length - 1].value[0];
 }
-/*
+
 function cleanConsole() {
     console.clear();
     document.getElementById("show").innerHTML = "";
-}*/
+}
