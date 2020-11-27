@@ -8,6 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
+    <!-- Code Mirror -->
+    <script src="codemirror/min.js"></script>
+    <link rel="stylesheet" href="codemirror/styles-min.css"/>
+    <script src="codemirror/javascript.js"></script>
+    <link rel="stylesheet" href="codemirror/dracula.css"/>
+
+    <!-- Sval (Javascript Interpreter) -->
+    <script type="text/javascript" src="sval/sval.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -109,8 +118,16 @@
                 <span>Code</span>
             </label>
 
-            <div class="content">
+            <div class="content code-editor">
+                <div class="editor">
+                    <textarea id="editor"></textarea>
+                    <button id="runFunction">Run code</button>
+                </div>
 
+                <div class="console">
+                    <div id="show"></div>
+                    <button id="clearFunction">Clear console</button>
+                </div>
             </div>
         </div>
 
@@ -198,6 +215,7 @@
         </div>
     </main>
 
+    <script src="javascript/code-editor.js"></script>
     <script src="javascript/card.js"></script>
     <script src="javascript/clock.js"></script>
     <script src="javascript/news.js"></script>
