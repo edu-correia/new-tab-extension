@@ -6,7 +6,7 @@ var editor = CodeMirror.fromTextArea(document.getElementById("editor"),{
 var clearBtn = document.getElementById("clearFunction");
 var runBtn = document.getElementById("runFunction");
 
-clearBtn.addEventListener("click", cleanConsole());
+clearBtn.addEventListener("click", cleanConsole);
 runBtn.addEventListener("click", run);
 
 function run() {
